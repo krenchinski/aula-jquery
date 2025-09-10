@@ -1,0 +1,49 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: #F9F9F9;
+    color: #333;
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.faq-container h2 {
+    text-align: center;
+    color: #0056b3;
+}
+
+#busca-faq{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #CCC;
+}
+
+.pergunta {
+    background-color: #fff;
+    padding: 15px 20px;
+    margin-top: 8px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color .3s;
+}
+
+.pergunta:hover {
+    background-color: #f1f1f1;
+}
+
+.pergunta .ativa {
+    background-color: #e7f1ff;
+}
+
+.resposta {
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    border-top: none;
+    background-color: #FFF;
+    display: none;
+}
