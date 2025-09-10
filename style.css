@@ -40,6 +40,10 @@ body {
     background-color: #e7f1ff;
 }
 
+.pergunta .icone {
+    float: right;
+}
+
 .resposta {
     padding: 15px 20px;
     border: 1px solid #ddd;
