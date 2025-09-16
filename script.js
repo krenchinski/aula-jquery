@@ -19,6 +19,20 @@ $(document).ready(function(){
         }else{
             icone.html("+");
         }
-    })
+    });
 
+    $('#busca-faq').on('keyup', function(){
+        let termoBusca = $(this).val().toLowerCase();
+
+        $('.faq-item').each(function(){
+            let textoItem = $(this).text().toLowerCase();
+
+            if(textoItem.includes(termoBusca)){
+                $(this).show();
+            }else{
+                $(this).hide();
+            }
+
+        })
+    });
 });
