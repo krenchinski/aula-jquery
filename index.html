@@ -1,50 +1,105 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset='utf-8'>
-        <title>Aula JQuery</title>
-        <link rel='stylesheet' type='text/css' href='style.css'>
-        <script src='https://code.jquery.com/jquery-3.7.1.js'></script>
-        <script src='script.js'></script>
-    </head>
-    <body>
-        <div class="faq-container">
-            <h2>Perguntas Frequentes</h2>
-            <input type="text" id="busca-faq" placeholder="Digite para buscar...">
 
-            <div id="faq-list">
-                <div class="faq-item">
-                    <div class="pergunta">
-                        O que é JQuery?
-                        <span class="icone">+</span>
-                    </div>
-                    <div class="resposta">
-                        Aqui o aluno vai responder oque é o JQuery
-                    </div>
+<head>
+    <meta charset='utf-8'>
+    <title>Aula JQuery</title>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <script src='https://code.jquery.com/jquery-3.7.1.js'></script>
+    <script src='script.js'></script>
+</head>
+
+<body>
+    <div class="faq-container">
+        <h2>Perguntas Frequentes</h2>
+        <input type="text" id="busca-faq" placeholder="Digite para buscar...">
+
+        <div id="faq-list">
+            <div class="faq-item">
+                <div class="pergunta">
+                    O que é JQuery?
+                    <span class="icone">+</span>
                 </div>
-
-                <div class="faq-item">
-                    <div class="pergunta">
-                        Por que usar JQuery?
-                        <span class="icone">+</span>
-                    </div>
-                    <div class="resposta">
-                        Aqui o aluno vai responder
-                    </div>
+                <div class="resposta">
+                    É uma biblioteca JavaScript rápida, pequena e rica em recursos, criada para facilitar o uso do
+                    JavaScript no desenvolvimento de páginas web.
                 </div>
+            </div>
 
+            <div class="faq-item">
+                <div class="pergunta">
+                    Por que usar JQuery?
+                    <span class="icone">+</span>
+                </div>
+                <div class="resposta">
+                    Facilita o uso do JavaScript, escreve menos o código e funciona em todos os navegadores
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="pergunta">
+                    Como incluir o JQuery em uma página?
+                    <span class="icone">+</span>
+                </div>
+                <div class="resposta">
+                    Via CDN ou baixando o arquivo jquery
+                </div>
                 <div class="faq-item">
                     <div class="pergunta">
                         Como incluir o JQuery em uma página?
                         <span class="icone">+</span>
                     </div>
                     <div class="resposta">
-                        Aqui o aluno vai responder
+                        Adicione este código dentro do seu HTML, normalmente no head ou antes do fechamento do /body
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="pergunta">
+                        Quais os tipos de seletores do jQuery para capturar ID e Class?
+                        <span class="icone">+</span>
+                    </div>
+                    <div class="resposta">
+                        Usando seletores CSS muito semelhantes aos usados em CSS puro
                     </div>
                 </div>
 
+                <div class="faq-item">
+                    <div class="pergunta">
+                        Porque devemos capturar eventos dentro de um $(document).ready({ /* código */})?
+                        <span class="icone">+</span>
+                    </div>
+                    <div class="resposta">
+                        Porque, se você tentar manipular elementos que ainda não foram carregados, o jQuery não vai
+                        encontrá-los, seu código pode quebrar ou simplesmente não funcionar
+                    </div>
+                </div>
 
+                <div class="faq-item">
+                    <div class="pergunta">
+                        Qual a diferença do evento de keyup e keydown?
+                        <span class="icone">+</span>
+                    </div>
+                    <div class="resposta">
+                        Os eventos keydown e keyup são usados para detectar quando uma tecla do teclado é pressionada,
+                        mas eles ocorrem em momentos diferentes do processo de pressionar uma tecla.
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="pergunta">
+
+                            Qual a diferença do jQuery para o JavaScript puro?
+
+                            <span class="icone">+</span>
+                        </div>
+                        <div class="resposta">
+                            A diferença está principalmente em como você escreve o código, e não no que você pode fazer,
+                            porque jQuery é uma biblioteca feita com JavaScript.
+                        </div>
+                    </div>
+
+                </div>
             </div>
-        </div>
-    </body>
+            <a href="#" id="voltar-topo">↑</a>
+</body>
+
 </html>

@@ -35,4 +35,20 @@ $(document).ready(function(){
 
         })
     });
+$(window).on('scroll', function(){
+let btnVoltarTopo= $('voltar-topo');
+if($(this).scrollTop() > 200) {
+    btnVoltarTopo.fadeIn();
+    } else{
+        btnVoltarTopo.fadeOut();
+    }
+});
+
+    $('voltar-topo').click(function(event) {
+      event.preventDefault();
+      $('html, body').animate({scrollTop: 0}, 500, 'swing', function(){
+        console.log('acabou');
+      });
+
+    })
 });

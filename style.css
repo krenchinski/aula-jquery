@@ -51,3 +51,14 @@ body {
     background-color: #FFF;
     display: none;
 }
+ #voltar-topo {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    background-color: #0056b3;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: double;
+ }
